@@ -1,7 +1,8 @@
 import ListaFilmes from './components/ListaFilmes.jsx'
 
+const nomes = ['Ana', 'Bruno', 'Carlos', 'Diana'];
+
 function App() {
-  const nomes = ['Ana', 'Bruno', 'Carlos', 'Diana'];
 
 
   return (

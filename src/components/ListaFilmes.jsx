@@ -8,7 +8,7 @@ function ListaFilmes() {
         { id: 3, titulo: 'Avatar', ano: 2009 },
     ];
     return (<>
-        <button onClick={() => setFiltro(!filtro)}>Mostrar só filmes depois de 2000</button>
+        <button onClick={() => setFiltro(!filtro)}>{!filtro ? 'Mostrar só filmes depois de 2000' : 'Mostrar Todos'}</button>
         {filmes.filter(f => !filtro || f.ano > 2000).map(f => <Cartao key={f.id} titulo={f.titulo} ano={f.ano} />)}
     </>)
 }
