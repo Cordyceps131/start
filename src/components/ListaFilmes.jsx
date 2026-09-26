@@ -1,7 +1,12 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Cartao from './Cartao.jsx'
+
 function ListaFilmes() {
     const [filtro, setFiltro] = useState(false);
+
+    useEffect(() => {
+        alert('INICIEI!')
+    }, []);
     const filmes = [
         { id: 1, titulo: 'Batman', ano: 2005 },
         { id: 2, titulo: 'Matrix', ano: 1999 },

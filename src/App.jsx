@@ -1,17 +1,12 @@
-import ListaFilmes from './components/ListaFilmes.jsx'
+import ListaTarefas from './components/ListaTarefas.jsx'
 
-const nomes = ['Ana', 'Bruno', 'Carlos', 'Diana'];
 
 function App() {
 
-
   return (
-    <div>
-      <ul>
-        {nomes.map(n => <li key={n}>{n}</li>)}
-      </ul>
-      <ListaFilmes/>
-    </div>
+    <>
+    <ListaTarefas/>
+    </>
   )
 }
 
