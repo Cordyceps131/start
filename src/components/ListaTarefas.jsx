@@ -16,7 +16,6 @@ function ListaTarefas() {
     function marcarComoFeita(id) {
         const novoArray = tarefas.map(t => t.id === id ? { ...t, feita: !t.feita } : t)
         setTarefas(novoArray);
-        console.log(novoArray)
     }
 
     function adicionarTarefa(e) {
@@ -33,7 +32,6 @@ function ListaTarefas() {
     function apagarTarefa(id) {
         const novoArray = tarefas.filter(t => t.id !== id)
         setTarefas(novoArray);
-        console.log(novoArray)
     }
 
 
